@@ -1,3 +1,11 @@
+const menuBtn = document.querySelector(".menu-btn"); // Добавили константу для выбора класса .menu-btn
+const menuMobile = document.querySelector(".menu-mobile"); // Добавили константу для выбора класса .menu-mobile
+menuBtn.addEventListener("click", () => {
+  menuMobile.classList.toggle("menu--open");
+}); // добавляем отслеживание событий на нажатие для константы menuBtn, при котором будет выполняться добавление класса menu--open к классу .menu-mobile
+
+
+// прописан слайдер для новостей
 const swiper = new Swiper(".swiper", {
   loop: true,
   slidesPerView: 2,
